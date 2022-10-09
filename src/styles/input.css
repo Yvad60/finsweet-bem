@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* apply base styles to all pages */
+  html {
+    font-family: 'Roboto', sans-serif;
+    color: #1d2130;
+  }
+}
+
+@layer components {
+  .header {
+    @apply flex justify-between items-center px-20 py-2;
+  }
+
+  .header__nav-links {
+    @apply flex gap-[32px] items-center;
+  }
+
+  .link {
+    @apply text-base font-normal leading-6;
+  }
+
+  .link--footer {
+    @apply text-white opacity-60;
+  }
+
+  .headline {
+    @apply text-[24px] font-bold leading-[34px];
+  }
+
+  .headline--footer {
+    @apply text-[18px] font-[600] leading-[27px];
+  }
+
+  .headline--light {
+    @apply text-white;
+  }
+
+  .button {
+    @apply px-[40px] py-[16px] rounded-xl w-fit;
+  }
+
+  .button--primary {
+    @apply bg-primary_dark text-white;
+  }
+
+  .button--secondary {
+    @apply bg-white;
+  }
+
+  .button--single-field {
+    @apply flex-shrink-0;
+  }
+
+  .section-text {
+    @apply flex flex-col gap-6;
+  }
+
+  .section-text--big-gap {
+    @apply gap-10;
+  }
+
+  .section-text--centered {
+    @apply items-center text-center;
+  }
+
+  .section-text__label {
+    @apply font-bold text-[24px] leading-[29px] w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
+  }
+
+  .section-text__heading {
+    @apply font-bold text-[48px] leading-[58px] max-w-[576px];
+  }
+
+  .section-text__heading--testimonials-section {
+    @apply max-w-[628px];
+  }
+
+  .section-text__heading--cta {
+    @apply max-w-[846px];
+  }
+
+  .section-text__heading--big {
+    @apply text-[56px] leading-[62px] max-w-[768px];
+  }
+
+  .section-text__heading--medium {
+    @apply text-[32px] leading-[38px] max-w-[362px];
+  }
+
+  .hero-section {
+    @apply flex flex-col pt-[96px] items-center gap-[40px] bg-[url('/src/assets/backgrounds/Blur_Gradient.svg')] bg-no-repeat bg-center bg-cover;
+  }
+
+  .single-field {
+    @apply flex bg-white py-[8px] pl-[24px] pr-[8px] rounded-[20px] w-[576px] overflow-hidden;
+  }
+
+  .single-field--footer {
+    @apply pl-[22px] bg-[#2B2E3C] w-[410px] pr-0 py-0 rounded-lg;
+  }
+
+  .single-field__input {
+    @apply outline-none w-full;
+  }
+
+  .single-field__input--footer {
+    @apply bg-[#2B2E3C] text-white;
+  }
+
+  .hero-section__image {
+    @apply w-[1024px] mt-[24px];
+  }
+
+  .description {
+    @apply text-base leading-6 font-normal max-w-[576px];
+  }
+
+  .description--light {
+    @apply text-white;
+  }
+
+  .description--big {
+    @apply text-[18px] max-w-[768px] leading-[27px];
+  }
+
+  .description--why-us-section {
+    @apply text-[20px]  max-w-[504px];
+  }
+
+  .features-section {
+    @apply pt-[128.43px] flex flex-col items-center gap-12;
+  }
+
+  .feature-card {
+    @apply flex flex-col gap-[24px] w-[362px];
+  }
+
+  .features-section__cards-container {
+    @apply flex gap-[32px] p-16 bg-light_violet bg-opacity-50 rounded-3xl;
+  }
+
+  .feature-card__title-icon {
+    @apply w-[48px];
+  }
+
+  .halved-section {
+    @apply px-20 flex justify-center items-center gap-[88px];
+  }
+
+  .halved-section--pushed-down {
+    @apply mt-32;
+  }
+
+  .section-list {
+    @apply flex flex-col gap-8;
+  }
+
+  .section-list__item {
+    @apply flex gap-6 items-center;
+  }
+
+  .section-list__item--big-gap {
+    @apply gap-8;
+  }
+
+  .section-list__content {
+    @apply flex flex-col gap-2;
+  }
+
+  .halved-section--impressions-section {
+    @apply py-16 bg-[url('/src/assets/backgrounds/Blur_Gradient.png')] bg-cover;
+  }
+
+  .testimony-card {
+    @apply w-[411px] flex flex-col gap-6 items-center justify-center rounded-3xl border-2 p-16 text-center;
+  }
+
+  .testimonials-section {
+    @apply flex flex-col mt-32 gap-12;
+  }
+
+  .testimony-card__footer {
+    @apply flex flex-col items-center gap-3;
+  }
+
+  .testimonials-section__card-container {
+    @apply flex justify-center gap-6;
+  }
+
+  .cta {
+    @apply py-32 bg-[url('/src/assets/backgrounds/Blur_Gradient.svg')];
+  }
+
+  .footer {
+    @apply py-16 px-20 flex justify-between bg-primary_dark;
+  }
+
+  .footer__links {
+    @apply flex flex-col gap-2;
+  }
+}
