@@ -40,7 +40,7 @@
   }
 
   .button {
-    @apply px-[40px] py-[16px] rounded-xl w-fit;
+    @apply px-[40px] py-[16px] rounded-xl w-fit font-bold;
   }
 
   .button--primary {
@@ -148,7 +148,7 @@
   }
 
   .halved-section {
-    @apply px-20 flex justify-center items-center gap-[88px];
+    @apply px-20 flex justify-between items-center gap-[88px];
   }
 
   .halved-section--pushed-down {
@@ -173,6 +173,10 @@
 
   .halved-section--impressions-section {
     @apply py-16 bg-[url('/src/assets/backgrounds/Blur_Gradient.png')] bg-cover;
+  }
+
+  .logos-section {
+    @apply px-20 flex justify-between;
   }
 
   .testimony-card {

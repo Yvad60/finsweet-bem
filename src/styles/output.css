@@ -612,6 +612,7 @@ html {
   padding-right: 40px;
   padding-top: 16px;
   padding-bottom: 16px;
+  font-weight: 700;
 }
 
 .button--primary {
@@ -793,7 +794,7 @@ html {
 .halved-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 88px;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -830,6 +831,13 @@ html {
   background-size: cover;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.logos-section {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .testimony-card {
@@ -888,6 +896,115 @@ html {
   gap: 0.5rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.w-\[616px\] {
+  width: 616px;
+}
+
+.w-\[378px\] {
+  width: 378px;
+}
+
+.max-w-\[768px\] {
+  max-width: 768px;
+}
+
 .grow {
   flex-grow: 1;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.rounded-tr-\[67px\] {
+  border-top-right-radius: 67px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-light_violet {
+  --tw-border-opacity: 1;
+  border-color: rgb(224 228 252 / var(--tw-border-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
+}
+
+.bg-\[url\(\'\.\.\/assets\/backgrounds\/Blur_Gradient_product_hero\.png\'\)\] {
+  background-image: url('../assets/backgrounds/Blur_Gradient_product_hero.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/backgrounds\/Blur_Gradient_product_features\.png\'\)\] {
+  background-image: url('/src/assets/backgrounds/Blur_Gradient_product_features.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pr-20 {
+  padding-right: 5rem;
 }
