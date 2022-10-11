@@ -6,11 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/output.css">
   <title>FinSweet</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
@@ -19,10 +14,10 @@
     <nav class="header__nav-links">
       <a href="#" class="link">Home</a>
       <a href="./pages/product.html" class="link">Product</a>
-      <a href="#" class="link">Pricing</a>
-      <a href="#" class="link">About us</a>
-      <a href="#" class="link">Blog</a>
-      <a href="#" class="link">Contact</a>
+      <a href="./pages/pricing.html" class="link">Pricing</a>
+      <a href="./pages/about_us.html" class="link">About us</a>
+      <a href="./pages/blog.html" class="link">Blog</a>
+      <a href="./pages/contact.html" class="link">Contact</a>
       <button type="button" class="button button--primary">Free trial</button>
     </nav>
   </header>
@@ -37,9 +32,9 @@
         dolore
         magna aliquyam erat.</p>
     </div>
-    <form class="single-field">
-      <input type="text" placeholder="Enter Your Email" class="single-field__input">
-      <button type="submit" class="button button--primary button--single-field">Get free trial</button>
+    <form class="single-field-form">
+      <input type="text" placeholder="Enter Your Email" class="single-field-form__input">
+      <button type="submit" class="button button--primary button--single-field-form">Get free trial</button>
     </form>
     <img class="hero-section__image" src="./assets/images/Dashboard image.png" alt="dashboard">
   </section>
@@ -162,26 +157,34 @@
     <div class="section-text section-text--centered">
       <h2 class="section-text__heading">Features</h2>
     </div>
-    <div class="features-section__cards-container">
-      <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/protected.svg" alt="security icon">
+    <div class="features-section__cards-container features-section__cards-container--tinted">
+      <div class="feature-card feature-card--small ">
+        <img class="feature-card__title-icon" src="./assets/icons/camera.svg" alt="Camera icon">
         <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">High security to protect from piracy</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+          <h3 class="section-text__heading section-text__heading--medium">Advanced 256-bit encryption
+          </h3>
+          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+          </p>
         </div>
       </div>
-      <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/thumb.svg" alt="thumbs up icon">
-        <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">Premium quality performance</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-        </div>
+      <div class="feature-card__divider">
       </div>
       <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/headsets.svg" alt="security icon">
+        <img class="feature-card__title-icon" src="./assets/icons/chat.svg" alt="chat icon">
         <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">Full time customer support - 24/7</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+          <h3 class="section-text__heading section-text__heading--medium">Simple collaboration tools</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+          </p>
+        </div>
+      </div>
+      <div class="feature-card__divider">
+      </div>
+      <div class="feature-card">
+        <img class="feature-card__title-icon" src="./assets/icons/robot.svg" alt="robot icon">
+        <div class="section-text">
+          <h3 class="section-text__heading section-text__heading--medium">Customizable AI features</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+          </p>
         </div>
       </div>
     </div>
@@ -195,7 +198,9 @@
     <div class="testimonials-section__card-container">
       <div class="testimony-card">
         <div class="testimony-card__content">
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          <p class="description description--big description--bolded">Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam
+            nonumy eirmod
             tempor
             invidunt ut labore
             et dolore
@@ -204,34 +209,36 @@
         <div class="testimony-card__footer">
           <img src="./assets/images/testimonial_image.png" alt="">
           <h5 class="headline">Ron Wood</h5>
-          <p class="">CEO</p>
+          <p class="description">CEO</p>
         </div>
       </div>
       <div class="testimony-card">
         <div class="testimony-card__content">
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          <p class="description description--big description--bolded">Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor
             invidunt ut labore
             et dolore
             magna aliquyam erat, sed diam voluptua.</p>
         </div>
         <div class="testimony-card__footer">
-          <img src="./assets/images/testimonial_image.png" alt="">
-          <h5 class="headline">Ron Wood</h5>
-          <p class="">CEO</p>
+          <img src="./assets/images/testimonial_image2.png" alt="">
+          <h5 class="headline">Mark Manson</h5>
+          <p class="description">Marketing Manager</p>
         </div>
       </div>
       <div class="testimony-card">
         <div class="testimony-card__content">
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          <p class="description description--big description--bolded">Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod
             tempor
             invidunt ut labore
             et dolore
             magna aliquyam erat, sed diam voluptua.</p>
         </div>
         <div class="testimony-card__footer">
-          <img src="./assets/images/testimonial_image.png" alt="">
-          <h5 class="headline">Ron Wood</h5>
-          <p class="">CEO</p>
+          <img src="./assets/images/testimonial_image3.png" alt="">
+          <h5 class="headline">Sam Preston</h5>
+          <p class="description">CTO</p>
         </div>
       </div>
     </div>
@@ -268,13 +275,14 @@
       <a href="#" class="link link--footer">Pricing</a>
       <a href="#" class="link link--footer">Testimonial</a>
     </div>
-    <div class="">
-      <img class="logo" src="./assets/icons/Finsweet black logo.svg" alt="FinSweet black logo">
+    <div class="footer-cta">
+      <img class="logo" src="./assets/icons/Finsweet white logo.svg" alt="FinSweet black logo">
       <div class="footer__newsletter">
         <p class="description description--light">Subscribe to our Newsletter</p>
-        <form class="single-field single-field--footer">
-          <input type="text" placeholder="Enter Your Email" class="single-field__input single-field__input--footer">
-          <button type="submit" class="button button--secondary button--single-field">Subscribe</button>
+        <form class="single-field-form single-field-form--footer">
+          <input type="text" placeholder="Enter Your Email"
+            class="single-field-form__input single-field-form__input--footer">
+          <button type="submit" class="button button--secondary button--single-field-form">Subscribe</button>
         </form>
       </div>
     </div>

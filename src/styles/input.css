@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swa');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,7 +53,7 @@
     @apply bg-white;
   }
 
-  .button--single-field {
+  .button--single-field-form {
     @apply flex-shrink-0;
   }
 
@@ -68,7 +70,7 @@
   }
 
   .section-text__label {
-    @apply font-bold text-[24px] leading-[29px] w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
+    @apply font-bold text-2xl leading-[29px] w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
   }
 
   .section-text__heading {
@@ -91,70 +93,6 @@
     @apply text-[32px] leading-[38px] max-w-[362px];
   }
 
-  .hero-section {
-    @apply flex flex-col pt-[96px] items-center gap-[40px] bg-[url('/src/assets/backgrounds/Blur_Gradient.svg')] bg-no-repeat bg-center bg-cover;
-  }
-
-  .single-field {
-    @apply flex bg-white py-[8px] pl-[24px] pr-[8px] rounded-[20px] w-[576px] overflow-hidden;
-  }
-
-  .single-field--footer {
-    @apply pl-[22px] bg-[#2B2E3C] w-[410px] pr-0 py-0 rounded-lg;
-  }
-
-  .single-field__input {
-    @apply outline-none w-full;
-  }
-
-  .single-field__input--footer {
-    @apply bg-[#2B2E3C] text-white;
-  }
-
-  .hero-section__image {
-    @apply w-[1024px] mt-[24px];
-  }
-
-  .description {
-    @apply text-base leading-6 font-normal max-w-[576px];
-  }
-
-  .description--light {
-    @apply text-white;
-  }
-
-  .description--big {
-    @apply text-[18px] max-w-[768px] leading-[27px];
-  }
-
-  .description--why-us-section {
-    @apply text-[20px]  max-w-[504px];
-  }
-
-  .features-section {
-    @apply pt-[128.43px] flex flex-col items-center gap-12;
-  }
-
-  .feature-card {
-    @apply flex flex-col gap-[24px] w-[362px];
-  }
-
-  .features-section__cards-container {
-    @apply flex gap-[32px] p-16 bg-light_violet bg-opacity-50 rounded-3xl;
-  }
-
-  .feature-card__title-icon {
-    @apply w-[48px];
-  }
-
-  .halved-section {
-    @apply px-20 flex justify-between items-center gap-[88px];
-  }
-
-  .halved-section--pushed-down {
-    @apply mt-32;
-  }
-
   .section-list {
     @apply flex flex-col gap-8;
   }
@@ -171,16 +109,96 @@
     @apply flex flex-col gap-2;
   }
 
-  .halved-section--impressions-section {
-    @apply py-16 bg-[url('/src/assets/backgrounds/Blur_Gradient.png')] bg-cover;
+  .hero-section {
+    @apply flex flex-col pt-[96px] items-center gap-[40px] bg-[url('/src/assets/backgrounds/Blur_Gradient_hero.png')] bg-no-repeat bg-center bg-cover;
+  }
+
+  .hero-section__image {
+    @apply w-[1024px] mt-[24px];
+  }
+
+  .single-field-form {
+    @apply flex bg-white py-[8px] pl-[24px] pr-[8px] rounded-[20px] w-[576px] overflow-hidden;
+  }
+
+  .single-field-form--footer {
+    @apply pl-[22px] bg-[#2B2E3C] w-[410px] pr-0 py-0 rounded-lg;
+  }
+
+  .single-field-form__input {
+    @apply outline-none w-full;
+  }
+
+  .single-field-form__input--footer {
+    @apply bg-[#2B2E3C] text-white;
+  }
+
+  .description {
+    @apply text-base leading-6 font-normal max-w-[576px];
+  }
+
+  .description--light {
+    @apply text-white;
+  }
+
+  .description--big {
+    @apply text-[18px] max-w-[768px] leading-[27px];
+  }
+
+  .description--bolded {
+    @apply font-bold;
+  }
+
+  .description--why-us-section {
+    @apply text-[20px]  max-w-[504px];
   }
 
   .logos-section {
     @apply px-20 flex justify-between;
   }
 
+  .features-section {
+    @apply pt-[128.43px] flex flex-col items-center gap-12;
+  }
+
+  .features-section__cards-container {
+    @apply flex gap-[32px] p-16 bg-light_violet bg-opacity-50 rounded-3xl;
+  }
+
+  .features-section__cards-container--tinted {
+    @apply bg-[#D798E126] bg-opacity-20;
+  }
+
+  .feature-card {
+    @apply flex flex-col gap-6 w-[362px];
+  }
+
+  .feature-card--small {
+    @apply w-[339px] gap-8;
+  }
+
+  .feature-card__divider {
+    @apply w-[2px] bg-[#CDC7D2];
+  }
+
+  .feature-card__title-icon {
+    @apply w-[48px];
+  }
+
+  .halved-section {
+    @apply px-20 flex justify-between items-center gap-[88px];
+  }
+
+  .halved-section--pushed-down {
+    @apply mt-32;
+  }
+
+  .halved-section--impressions-section {
+    @apply py-16 bg-[url('/src/assets/backgrounds/Blur_Gradient.png')] bg-cover;
+  }
+
   .testimony-card {
-    @apply w-[411px] flex flex-col gap-6 items-center justify-center rounded-3xl border-2 p-16 text-center;
+    @apply w-[411px] flex flex-col gap-6 items-center justify-center rounded-3xl border-2 border-[#6199ED42] border-opacity-25 p-16 text-center;
   }
 
   .testimonials-section {
@@ -196,7 +214,7 @@
   }
 
   .cta {
-    @apply py-32 bg-[url('/src/assets/backgrounds/Blur_Gradient.svg')];
+    @apply py-32 bg-[url('/src/assets/backgrounds/Blur_Gradient_cta.png')];
   }
 
   .footer {
@@ -205,5 +223,12 @@
 
   .footer__links {
     @apply flex flex-col gap-2;
+  }
+
+  .footer-cta {
+    @apply space-y-8;
+  }
+  .footer__newsletter {
+    @apply space-y-4;
   }
 }
