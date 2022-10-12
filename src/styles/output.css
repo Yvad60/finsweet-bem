@@ -850,7 +850,11 @@ html {
   line-height: 34px;
 }
 
-.sales-section__list-item-decription {
+.sales-section__list-item-decription{
+  max-width: 576px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 /* Testimonials */
@@ -1066,6 +1070,58 @@ html {
   padding-top: 16px;
   padding-bottom: 16px;
   font-weight: 700;
+}
+
+/* Contact us section */
+
+.contact-us{
+  display: flex;
+  gap: 148px;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.contact-us__form{
+  display: grid;
+  grid-template-columns: repeat(2,303px);
+  gap: 1rem;
+}
+
+.contact-us__form-input{
+  border-radius: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.contact-us__form-input--long{
+  grid-column: span 2 / span 2;
+}
+
+.contact-us__form-input--big{
+  height: 148px;
+  resize: none;
+}
+
+.contact-us__form-button{
+  grid-column: span 2 / span 2;
+  width: 100%;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* Not updated yet! */
@@ -1292,10 +1348,6 @@ html {
   margin-top: 8rem;
 }
 
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
 .mt-32{
   margin-top: 8rem;
 }
@@ -1308,16 +1360,8 @@ html {
   display: grid;
 }
 
-.h-\[148px\]{
-  height: 148px;
-}
-
 .w-\[378px\]{
   width: 378px;
-}
-
-.w-full{
-  width: 100%;
 }
 
 .w-\[616px\]{
@@ -1348,16 +1392,8 @@ html {
   flex-grow: 1;
 }
 
-.resize-none{
-  resize: none;
-}
-
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-\[repeat\(2\2c 303px\)\]{
-  grid-template-columns: repeat(2,303px);
 }
 
 .flex-col{
@@ -1392,10 +1428,6 @@ html {
   gap: 0.25rem;
 }
 
-.gap-\[148px\]{
-  gap: 148px;
-}
-
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -1415,10 +1447,6 @@ html {
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .rounded-tr-\[67px\]{
@@ -1478,26 +1506,6 @@ html {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-14{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pt-24{

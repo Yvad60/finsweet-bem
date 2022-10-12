@@ -173,6 +173,7 @@
   }
 
   .sales-section__list-item-decription {
+    @apply text-base leading-6 font-normal max-w-[576px];
   }
 
   /* Testimonials */
@@ -275,6 +276,31 @@
 
   .footer__button {
     @apply px-[40px] py-[16px] rounded-xl w-fit font-bold bg-white flex-shrink-0;
+  }
+
+  /* Contact us section */
+
+  .contact-us {
+    @apply flex gap-[148px] bg-light_violet py-14 px-16 rounded-3xl;
+  }
+  .contact-us__form {
+    @apply grid grid-cols-[repeat(2,303px)] gap-4;
+  }
+
+  .contact-us__form-input {
+    @apply px-6 py-5 rounded-lg;
+  }
+
+  .contact-us__form-input--long {
+    @apply col-span-2;
+  }
+
+  .contact-us__form-input--big {
+    @apply h-[148px] resize-none;
+  }
+
+  .contact-us__form-button {
+    @apply px-[40px] py-[16px] rounded-xl w-full col-span-2 font-bold bg-primary_dark text-white;
   }
 
   /* Not updated yet! */

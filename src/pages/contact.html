@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link rel="stylesheet" href="/src/styles/output.css">
+  <link rel="stylesheet" href="../styles/output.css">
 </head>
 
 <body>
   <header class="header">
-    <img class="logo" src="../assets/icons/Finsweet black logo.svg" alt="FinSweet black logo">
-    <nav class="header__nav-links">
-      <a href="../index.html" class="link">Home</a>
-      <a href="#" class="link">Product</a>
-      <a href="#" class="link">Pricing</a>
-      <a href="./about_us.html" class="link">About us</a>
-      <a href="./blog.html" class="link">Blog</a>
-      <a href="#" class="link">Contact</a>
-      <button type="button" class="button button--primary">Free trial</button>
+    <img class="header__logo" src="../assets/icons/Finsweet black logo.svg" alt="FinSweet black logo">
+    <nav class="header__nav-links-container">
+      <a href="../index.html" class="header__nav-link">Home</a>
+      <a href="./product.html" class="header__nav-link">Product</a>
+      <a href="./pricing.html" class="header__nav-link">Pricing</a>
+      <a href="./about_us.html" class="header__nav-link">About us</a>
+      <a href="./blog.html" class="header__nav-link">Blog</a>
+      <a href="./contact.html" class="header__nav-link">Contact</a>
+      <button type="button" class="header__button">Free trial</button>
     </nav>
   </header>
   <section class="px-20 flex flex-col gap-16">
@@ -26,16 +26,18 @@
       <h1 class="section-text__heading section-text__heading--big">Get in touch with us
       </h1>
     </div>
-    <div class="flex gap-[148px] bg-light_violet py-14 px-16 rounded-3xl">
-      <div class="grid grid-cols-[repeat(2,303px)] gap-4">
-        <input type="text" placeholder="Full name" class="px-6 py-5 rounded-lg" name="" id="">
-        <input type="text" placeholder="Full name" class="px-6 py-5 rounded-lg" name="" id="">
-        <input type="text" placeholder="Full name" class="px-6 py-5 rounded-lg col-span-2" name="" id="">
-        <input type="text" placeholder="Full name" class="px-6 py-5 rounded-lg col-span-2" name="" id="">
+    <div class="contact-us">
+      <form class="contact-us__form">
+        <input type="text" placeholder="Full name" class="contact-us__form-input" name="" id="">
+        <input type="text" placeholder="Full name" class="contact-us__form-input" name="" id="">
+        <input type="text" placeholder="Full name" class="contact-us__form-input contact-us__form-input--long" name=""
+          id="">
+        <input type="text" placeholder="Full name" class="contact-us__form-input contact-us__form-input--long" name=""
+          id="">
         <textarea placeholder="Message" name="" id="" cols="30" rows="10"
-          class="px-6 py-5 rounded-lg col-span-2 h-[148px] resize-none"></textarea>
-        <button type="button" class="button button--primary w-full col-span-2">Send</button>
-      </div>
+          class="contact-us__form-input contact-us__form-input--long contact-us__form-input--big"></textarea>
+        <button type="button" class="contact-us__form-button">Send</button>
+      </form>
       <div class="section-list">
         <div class="section-list__item section-list__item--big-gap">
           <img src="../assets/icons/graph.svg" alt="graph icon" class="section-list__icon">
@@ -61,43 +63,45 @@
       </div>
     </div>
   </section>
+
   <section class="cta">
-    <div class="section-text section-text--centered">
-      <h2 class="section-text__heading section-text__heading--big">Are you ready to grow your business with us?</h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+    <div class="cta__text">
+      <h2 class="cta__heading">Are you ready to grow your business with us?</h2>
+      <p class="cta__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
       </p>
-      <button type="button" class="button button--primary">View Pricing</button>
+      <button type="button" class="cta__button">View Pricing</button>
     </div>
   </section>
+
   <footer class="footer">
-    <div class="footer__links">
-      <a href="#" class="headline headline--light headline--footer">Company</a>
-      <a href="#" class="link link--footer">About us</a>
-      <a href="#" class="link link--footer">Why Choose us</a>
-      <a href="#" class="link link--footer">Pricing</a>
-      <a href="#" class="link link--footer">Testimonial</a>
+    <div class="footer__links-container">
+      <a href="#" class="footer__links-headline">Company</a>
+      <a href="#" class="footer__link">About us</a>
+      <a href="#" class="footer__link">Why Choose us</a>
+      <a href="#" class="footer__link">Pricing</a>
+      <a href="#" class="footer__link">Testimonial</a>
     </div>
-    <div class="footer__links">
-      <a href="#" class="headline headline--light headline--footer">Company</a>
-      <a href="#" class="link link--footer">About us</a>
-      <a href="#" class="link link--footer">Why Choose us</a>
-      <a href="#" class="link link--footer">Pricing</a>
-      <a href="#" class="link link--footer">Testimonial</a>
+    <div class="footer__links-container">
+      <a href="#" class="footer__links-headline">Company</a>
+      <a href="#" class="footer__link">About us</a>
+      <a href="#" class="footer__link">Why Choose us</a>
+      <a href="#" class="footer__link">Pricing</a>
+      <a href="#" class="footer__link">Testimonial</a>
     </div>
-    <div class="footer__links">
-      <a href="#" class="headline headline--light headline--footer">Company</a>
-      <a href="#" class="link link--footer">About us</a>
-      <a href="#" class="link link--footer">Why Choose us</a>
-      <a href="#" class="link link--footer">Pricing</a>
-      <a href="#" class="link link--footer">Testimonial</a>
+    <div class="footer__links-container">
+      <a href="#" class="footer__links-headline">Company</a>
+      <a href="#" class="footer__link">About us</a>
+      <a href="#" class="footer__link">Why Choose us</a>
+      <a href="#" class="footer__link">Pricing</a>
+      <a href="#" class="footer__link">Testimonial</a>
     </div>
-    <div class="">
-      <img class="logo" src="./assets/icons/Finsweet black logo.svg" alt="FinSweet black logo">
+    <div class="footer-cta">
+      <img class="footer__logo" src="../assets/icons/Finsweet white logo.svg" alt="FinSweet black logo">
       <div class="footer__newsletter">
-        <p class="description description--light">Subscribe to our Newsletter</p>
-        <form class="single-field single-field--footer">
-          <input type="text" placeholder="Enter Your Email" class="single-field__input single-field__input--footer">
-          <button type="submit" class="button button--secondary button--single-field">Subscribe</button>
+        <p class="footer__newsletter-description">Subscribe to our Newsletter</p>
+        <form class="footer__newsletter-form">
+          <input type="text" placeholder="Enter Your Email" class="footer__newsletter-input">
+          <button type="submit" class="footer__button">Subscribe</button>
         </form>
       </div>
     </div>
