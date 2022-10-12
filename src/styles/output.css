@@ -826,13 +826,15 @@ html {
   line-height: 1.5rem;
 }
 
-.sales-section__sales-list{
+.sales-section__sales-list, 
+  .contact-us__contacts-list{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.sales-section__list-item{
+.sales-section__list-item, 
+  .contact-us__contact-list-item{
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -1072,7 +1074,7 @@ html {
   font-weight: 700;
 }
 
-/* Contact us section */
+/* Contact us section in contact.html */
 
 .contact-us{
   display: flex;
@@ -1123,6 +1125,27 @@ html {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.contact-us__contact-details{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-us__contact-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.contact-us__contact-description{
+  max-width: 576px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* WORK IN PROGRESS (●__●) */
 
 /* Not updated yet! */
 
@@ -1231,22 +1254,6 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-.section-list__item{
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.section-list__item--big-gap{
-  gap: 2rem;
-}
-
-.section-list__content{
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .hero-section{

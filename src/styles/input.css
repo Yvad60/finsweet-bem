@@ -156,11 +156,13 @@
     @apply text-base leading-6 font-normal text-[20px] max-w-[504px];
   }
 
-  .sales-section__sales-list {
+  .sales-section__sales-list,
+  .contact-us__contacts-list {
     @apply flex flex-col gap-8;
   }
 
-  .sales-section__list-item {
+  .sales-section__list-item,
+  .contact-us__contact-list-item {
     @apply flex items-center gap-8;
   }
 
@@ -278,11 +280,12 @@
     @apply px-[40px] py-[16px] rounded-xl w-fit font-bold bg-white flex-shrink-0;
   }
 
-  /* Contact us section */
+  /* Contact us section in contact.html */
 
   .contact-us {
     @apply flex gap-[148px] bg-light_violet py-14 px-16 rounded-3xl;
   }
+  
   .contact-us__form {
     @apply grid grid-cols-[repeat(2,303px)] gap-4;
   }
@@ -303,6 +306,19 @@
     @apply px-[40px] py-[16px] rounded-xl w-full col-span-2 font-bold bg-primary_dark text-white;
   }
 
+  .contact-us__contact-details {
+    @apply flex flex-col gap-2;
+  }
+
+  .contact-us__contact-title {
+    @apply text-[24px] font-bold leading-[34px];
+  }
+
+  .contact-us__contact-description {
+    @apply text-base leading-6 font-normal max-w-[576px];
+  }
+
+  /* WORK IN PROGRESS (●__●) */
   /* Not updated yet! */
 
   .link {
