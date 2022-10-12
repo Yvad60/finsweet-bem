@@ -55,21 +55,22 @@
     @apply pt-[128.43px] flex flex-col items-center gap-12;
   }
 
-  .features-section__text {
-    @apply flex flex-col gap-6 items-center;
+  .features-section__text,
+  .sales-section__text-container {
+    @apply flex flex-col gap-6;
   }
 
   .features-section__text--centered {
-    @apply text-center;
+    @apply items-center text-center;
   }
 
   .features-section__label,
-  .why-us-section__label {
+  .why-us-section__label,
+  .sales-section__label {
     @apply font-bold text-2xl leading-[29px] w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
   }
 
-  .features-section__heading,
-  .why-us-section__heading {
+  .features-section__heading {
     @apply font-bold text-[32px] leading-[38px] max-w-[576px];
   }
 
@@ -103,7 +104,8 @@
 
   /* Why us section */
 
-  .why-us-section {
+  .why-us-section,
+  .sales-section {
     @apply px-20 flex justify-between items-center gap-[88px] mt-32;
   }
 
@@ -133,7 +135,10 @@
     @apply flex flex-col gap-6;
   }
 
-  .impressions-section__heading {
+  .impressions-section__heading,
+  .why-us-section__heading,
+  .sales-section__heading,
+  .features-section__heading--big {
     @apply font-bold text-[48px] leading-[58px] max-w-[576px];
   }
 
@@ -143,6 +148,31 @@
 
   .impressions-section__button {
     @apply px-[40px] py-[16px] rounded-xl w-fit font-bold bg-primary_dark text-white;
+  }
+
+  /* Sales section */
+
+  .sales-section__description {
+    @apply text-base leading-6 font-normal text-[20px] max-w-[504px];
+  }
+
+  .sales-section__sales-list {
+    @apply flex flex-col gap-8;
+  }
+
+  .sales-section__list-item {
+    @apply flex items-center gap-8;
+  }
+
+  .sales-section__list-content {
+    @apply flex flex-col gap-2;
+  }
+
+  .sales-section__list-item-title {
+    @apply text-[24px] font-bold leading-[34px];
+  }
+
+  .sales-section__list-item-decription {
   }
 
   /* Testimonials */
