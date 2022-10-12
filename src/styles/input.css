@@ -65,7 +65,7 @@
   }
 
   .features-section__label,
-  .why-us-section__label,
+  .solutions-section__label,
   .sales-section__label {
     @apply font-bold text-2xl leading-[29px] w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
   }
@@ -104,24 +104,24 @@
 
   /* Why us section */
 
-  .why-us-section,
+  .solutions-section,
   .sales-section {
     @apply px-20 flex justify-between items-center gap-[88px] mt-32;
   }
 
-  .why-us-section__text {
+  .solutions-section__text {
     @apply flex flex-col gap-6;
   }
 
-  .why-us-section__list {
+  .solutions-section__list {
     @apply flex flex-col gap-8;
   }
 
-  .why-us-section__list-item {
+  .solutions-section__list-item {
     @apply flex gap-6 items-center;
   }
 
-  .why-us-section__description {
+  .solutions-section__description {
     @apply leading-6 font-normal text-[20px] max-w-[504px];
   }
 
@@ -136,7 +136,7 @@
   }
 
   .impressions-section__heading,
-  .why-us-section__heading,
+  .solutions-section__heading,
   .sales-section__heading,
   .features-section__heading--big {
     @apply font-bold text-[48px] leading-[58px] max-w-[576px];
@@ -218,23 +218,23 @@
 
   /* Call to action */
 
-  .cta {
+  .call-to-action {
     @apply py-32 bg-[url('../assets/backgrounds/Blur_Gradient_cta.png')];
   }
 
-  .cta__text {
+  .call-to-action__text {
     @apply flex flex-col gap-6 items-center text-center;
   }
 
-  .cta__heading {
+  .call-to-action__heading {
     @apply font-bold text-[48px] leading-[58px] max-w-[846px];
   }
 
-  .cta__button {
+  .call-to-action__button {
     @apply px-[40px] py-[16px] rounded-xl w-fit font-bold bg-primary_dark text-white;
   }
 
-  .cta__description {
+  .call-to-action__description {
     @apply text-base leading-6 font-normal max-w-[576px];
   }
 
@@ -256,7 +256,7 @@
     @apply text-base font-normal leading-6 text-white opacity-60;
   }
 
-  .footer-cta {
+  .footer__call-to-action {
     @apply space-y-8;
   }
 
@@ -286,8 +286,12 @@
     @apply px-20 flex flex-col gap-16;
   }
 
+  .contact-us__text-container{
+    @apply flex flex-col pt-24 items-center text-center;
+  }
+
   .contact-us__form-container {
-    @apply flex gap-[148px] bg-light_violet py-14 px-16 rounded-3xl;
+    @apply flex gap-[148px] bg-light_violet py-14 px-16 rounded-3xl
   }
 
   .contact-us__heading {
@@ -429,7 +433,7 @@
     @apply flex bg-white py-[8px] pl-[24px] pr-[8px] rounded-[20px] w-[576px] overflow-hidden;
   }
 
-  .hero-section__form__input {
+  .hero-section__form-input {
     @apply outline-none w-full;
   }
 
@@ -465,7 +469,7 @@
     @apply font-bold;
   }
 
-  .description--why-us-section {
+  .description--solutions-section {
     @apply text-[20px]  max-w-[504px];
   }
 

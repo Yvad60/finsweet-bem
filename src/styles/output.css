@@ -654,7 +654,7 @@ html {
 }
 
 .features-section__label, 
-  .why-us-section__label, 
+  .solutions-section__label, 
   .sales-section__label{
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -725,7 +725,7 @@ html {
 
 /* Why us section */
 
-.why-us-section, 
+.solutions-section, 
   .sales-section{
   margin-top: 8rem;
   display: flex;
@@ -736,25 +736,25 @@ html {
   padding-right: 5rem;
 }
 
-.why-us-section__text{
+.solutions-section__text{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.why-us-section__list{
+.solutions-section__list{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.why-us-section__list-item{
+.solutions-section__list-item{
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.why-us-section__description{
+.solutions-section__description{
   max-width: 504px;
   font-size: 20px;
   font-weight: 400;
@@ -784,7 +784,7 @@ html {
 }
 
 .impressions-section__heading, 
-  .why-us-section__heading, 
+  .solutions-section__heading, 
   .sales-section__heading, 
   .features-section__heading--big{
   max-width: 576px;
@@ -935,13 +935,13 @@ html {
 
 /* Call to action */
 
-.cta{
+.call-to-action{
   background-image: url('../assets/backgrounds/Blur_Gradient_cta.png');
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
-.cta__text{
+.call-to-action__text{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -949,14 +949,14 @@ html {
   text-align: center;
 }
 
-.cta__heading{
+.call-to-action__heading{
   max-width: 846px;
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
 }
 
-.cta__button{
+.call-to-action__button{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -972,7 +972,7 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.cta__description{
+.call-to-action__description{
   max-width: 576px;
   font-size: 1rem;
   font-weight: 400;
@@ -1015,7 +1015,7 @@ html {
   opacity: 0.6;
 }
 
-.footer-cta > :not([hidden]) ~ :not([hidden]){
+.footer__call-to-action > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
@@ -1082,6 +1082,14 @@ html {
   gap: 4rem;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.contact-us__text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  text-align: center;
 }
 
 .contact-us__form-container{
@@ -1295,7 +1303,7 @@ html {
   padding-right: 8px;
 }
 
-.hero-section__form__input{
+.hero-section__form-input{
   width: 100%;
   outline: 2px solid transparent;
   outline-offset: 2px;
