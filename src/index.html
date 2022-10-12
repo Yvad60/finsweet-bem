@@ -10,114 +10,121 @@
 
 <body>
   <header class="header">
-    <img class="logo" src="./assets/icons/Finsweet black logo.svg" alt="FinSweet black logo">
-    <nav class="header__nav-links">
-      <a href="#" class="link">Home</a>
-      <a href="./pages/product.html" class="link">Product</a>
-      <a href="./pages/pricing.html" class="link">Pricing</a>
-      <a href="./pages/about_us.html" class="link">About us</a>
-      <a href="./pages/blog.html" class="link">Blog</a>
-      <a href="./pages/contact.html" class="link">Contact</a>
-      <button type="button" class="button button--primary">Free trial</button>
+    <img class="header__logo" src="./assets/icons/Finsweet black logo.svg" alt="FinSweet black logo">
+    <nav class="header__nav-links-container">
+      <a href="#" class="header__nav-link">Home</a>
+      <a href="./pages/product.html" class="header__nav-link">Product</a>
+      <a href="./pages/pricing.html" class="header__nav-link">Pricing</a>
+      <a href="./pages/about_us.html" class="header__nav-link">About us</a>
+      <a href="./pages/blog.html" class="header__nav-link">Blog</a>
+      <a href="./pages/contact.html" class="header__nav-link">Contact</a>
+      <button type="button" class="header__button">Free trial</button>
     </nav>
   </header>
 
   <section class="hero-section">
-    <div class="section-text section-text--centered section-text--big-gap">
-      <h1 class="section-text__heading section-text__heading--big">The Best Software to Grow your Sales and Services
+    <div class="hero-section__text">
+      <h1 class="hero-section__heading">The Best Software to Grow your Sales and Services
       </h1>
-      <p class="description description--big">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      <p class="hero-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor
         invidunt ut labore et
         dolore
         magna aliquyam erat.</p>
     </div>
-    <form class="single-field-form">
-      <input type="text" placeholder="Enter Your Email" class="single-field-form__input">
-      <button type="submit" class="button button--primary button--single-field-form">Get free trial</button>
+    <form class="hero-section__form single-field-form">
+      <input type="text" placeholder="Enter Your Email" class="hero-section__form__input">
+      <button type="submit" class="hero-section__button">Get free
+        trial</button>
     </form>
     <img class="hero-section__image" src="./assets/images/Dashboard image.png" alt="dashboard">
   </section>
 
   <section class="features-section">
-    <div class="section-text section-text--centered">
-      <h4 class="section-text__label">
+    <div class="features-section__text features-section__text--centered">
+      <h4 class="features-section__label">
         High-quality</h4>
-      <h2 class="section-text__heading">We have the Best Solution for your Business</h2>
+      <h2 class="features-section__heading features-section__heading--big">We have the Best Solution for your Business
+      </h2>
     </div>
     <div class="features-section__cards-container">
-      <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/protected.svg" alt="security icon">
-        <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">High security to protect from piracy</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+      <div class="features-section__card">
+        <img class="features-section__title-icon" src="./assets/icons/protected.svg" alt="security icon">
+        <div class="features-section__text">
+          <h3 class="features-section__heading">High security to protect from piracy</h3>
+          <p class="features-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.</p>
         </div>
       </div>
-      <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/thumb.svg" alt="thumbs up icon">
-        <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">Premium quality performance</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+      <div class="features-section__card">
+        <img class="features-section__title-icon" src="./assets/icons/thumb.svg" alt="thumbs up icon">
+        <div class="features-section__text">
+          <h3 class="features-section__heading">Premium quality performance</h3>
+          <p class="features-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.</p>
         </div>
       </div>
-      <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/headsets.svg" alt="security icon">
-        <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">Full time customer support - 24/7</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+      <div class="features-section__card">
+        <img class="features-section__title-icon" src="./assets/icons/headsets.svg" alt="security icon">
+        <div class="features-section__text">
+          <h3 class="features-section__heading">Full time customer support - 24/7</h3>
+          <p class="features-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="halved-section halved-section--pushed-down">
-    <div class="section-text">
-      <h4 class="section-text__label">Why should you work with us?</h4>
-      <h2 class="section-text__heading">We have the Best Solution for your Business</h2>
-      <p class="description desciption--why-us-section">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+  <section class="why-us-section">
+    <div class="why-us-section__text">
+      <h4 class="why-us-section__label">Why should you work with us?</h4>
+      <h2 class="why-us-section__heading">We have the Best Solution for your Business</h2>
+      <p class="why-us-section__description description desciption--why-us-section">Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed
         diam nonumy eirmod tempor
         invidunt ut labore et dolore
         magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
     </div>
-    <div class="section-list">
-      <div class="section-list__item">
-        <img src="./assets/icons/red_arrow.svg" alt="arrow icon" class="section-list__icon">
-        <p class="description description--why-us-section">Lorem ipsum dolor sit amet, consectetur
+    <div class="why-us-section__list">
+      <div class="why-us-section__list-item">
+        <img src="./assets/icons/red_arrow.svg" alt="arrow icon" class="why-us-section__list-item-icon">
+        <p class="why-us-section__description">Lorem ipsum dolor sit amet, consectetur
           adipiscing elit, sed do
           eiusmod.</p>
       </div>
-      <div class="section-list__item">
-        <img src="./assets/icons/red_arrow.svg" alt="arrow icon" class="section-list__icon">
-        <p class="description description--why-us-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      <div class="why-us-section__list-item">
+        <img src="./assets/icons/red_arrow.svg" alt="arrow icon" class="why-us-section__list-item-icon">
+        <p class="why-us-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
           do
           eiusmod.</p>
       </div>
-      <div class="section-list__item">
-        <img src="./assets/icons/red_arrow.svg" alt="arrow icon" class="list-item__icon">
-        <p class="description description--why-us-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      <div class="why-us-section__list-item">
+        <img src="./assets/icons/red_arrow.svg" alt="arrow icon" class="why-us-section__list-item-icon">
+        <p class="why-us-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
           do
           eiusmod.</p>
       </div>
     </div>
   </section>
 
-  <section class="halved-section halved-section--pushed-down halved-section--impressions-section">
-    <div class="section-text">
-      <h2 class="section-text__heading">More impressions, more conversions</h2>
-      <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+  <section class="impressions-section">
+    <div class="impressions-section__text-container">
+      <h2 class="impressions-section__heading">More impressions, more conversions</h2>
+      <p class="impressions-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor
         invidunt ut labore et dolore
         magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
-      <button type="button" class="button button--primary">Get free trial</button>
+      <button type="button" class="impressions-section__button">Get free trial</button>
     </div>
-    <img src="./assets/images/Image.png" alt="">
+    <img class="impressions-section__image" src="./assets/images/Image.png" alt="analytics">
   </section>
 
-  <section class="logos-section pt-16">
+  <section class="logos-section">
     <img src="./assets/images/Logo 1.png" alt="Logo 1">
     <img src="./assets/images/Logo 2.png" alt="Logo 2">
     <img src="./assets/images/Logo 3.png" alt="Logo 3">
     <img src="./assets/images/Logo 4.png" alt="Logo 4">
-    <img src="./assets/images/Logo 5.png" alt="Log 5">
+    <img src="./assets/images/Logo 5.png" alt="Logo 5">
   </section>
 
   <section class="halved-section halved-section--pushed-down">
@@ -154,135 +161,133 @@
   </section>
 
   <section class="features-section">
-    <div class="section-text section-text--centered">
+    <div class="features-section__text features-section__text--centered">
       <h2 class="section-text__heading">Features</h2>
     </div>
     <div class="features-section__cards-container features-section__cards-container--tinted">
-      <div class="feature-card feature-card--small ">
-        <img class="feature-card__title-icon" src="./assets/icons/camera.svg" alt="Camera icon">
-        <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">Advanced 256-bit encryption
+      <div class="features-section__card features-section__card--small">
+        <img class="features-section__title-icon" src="./assets/icons/camera.svg" alt="Camera icon">
+        <div class="features-section__text">
+          <h3 class="features-section__heading">Advanced 256-bit encryption
           </h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+          <p class="features-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor.
           </p>
         </div>
       </div>
-      <div class="feature-card__divider">
+      <div class="feature-section__cards-divider">
       </div>
-      <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/chat.svg" alt="chat icon">
-        <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">Simple collaboration tools</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+      <div class="features-section__card features-section__card--small">
+        <img class="features-section__title-icon" src="./assets/icons/chat.svg" alt="chat icon">
+        <div class="features-section__text">
+          <h3 class="features-section__heading">Simple collaboration tools</h3>
+          <p class="features-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor.
           </p>
         </div>
       </div>
-      <div class="feature-card__divider">
+      <div class="feature-section__cards-divider">
       </div>
-      <div class="feature-card">
-        <img class="feature-card__title-icon" src="./assets/icons/robot.svg" alt="robot icon">
-        <div class="section-text">
-          <h3 class="section-text__heading section-text__heading--medium">Customizable AI features</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+      <div class="features-section__card features-section__card--small">
+        <img class="features-section__title-icon" src="./assets/icons/robot.svg" alt="robot icon">
+        <div class="features-section__text">
+          <h3 class="features-section__heading">Customizable AI features</h3>
+          <p class="features-section__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="testimonials-section">
-    <div class="section-text section-text--centered">
-      <h2 class="section-text__heading section-text__heading--testimonials-section">The stunning results our
+  <section class="testimonials">
+    <div class="testimonials__text">
+      <h2 class="testimonials__heading">The stunning
+        results our
         customers have experienced</h2>
     </div>
-    <div class="testimonials-section__card-container">
-      <div class="testimony-card">
-        <div class="testimony-card__content">
-          <p class="description description--big description--bolded">Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam
-            nonumy eirmod
-            tempor
-            invidunt ut labore
-            et dolore
-            magna aliquyam erat, sed diam voluptua.</p>
-        </div>
-        <div class="testimony-card__footer">
-          <img src="./assets/images/testimonial_image.png" alt="">
-          <h5 class="headline">Ron Wood</h5>
-          <p class="description">CEO</p>
-        </div>
-      </div>
-      <div class="testimony-card">
-        <div class="testimony-card__content">
-          <p class="description description--big description--bolded">Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore
-            et dolore
-            magna aliquyam erat, sed diam voluptua.</p>
-        </div>
-        <div class="testimony-card__footer">
-          <img src="./assets/images/testimonial_image2.png" alt="">
-          <h5 class="headline">Mark Manson</h5>
-          <p class="description">Marketing Manager</p>
+    <div class="testimonials__cards-container">
+      <div class="testimonials__card">
+        <p class="testimonials__testimony-description">Lorem ipsum dolor sit
+          amet, consetetur sadipscing
+          elitr, sed diam
+          nonumy eirmod
+          tempor
+          invidunt ut labore
+          et dolore
+          magna aliquyam erat, sed diam voluptua.</p>
+        <div class="testimonials__card-footer">
+          <img class="testimonials__user-image" src="./assets/images/testimonial_image.png" alt="user">
+          <h5 class="testimonials__user-name">Ron Wood</h5>
+          <p class="testimonials__user-proffesion">CEO</p>
         </div>
       </div>
-      <div class="testimony-card">
-        <div class="testimony-card__content">
-          <p class="description description--big description--bolded">Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod
-            tempor
-            invidunt ut labore
-            et dolore
-            magna aliquyam erat, sed diam voluptua.</p>
+      <div class="testimonials__card">
+        <p class="testimonials__testimony-description">Lorem ipsum dolor sit amet, consetetur sadipscing
+          elitr, sed diam nonumy eirmod tempor
+          invidunt ut labore
+          et dolore
+          magna aliquyam erat, sed diam voluptua.</p>
+        <div class="testimonials__card-footer">
+          <img class="testimonials__user-image" src="./assets/images/testimonial_image2.png" alt="user">
+          <h5 class="testimonials__user-name">Mark Manson</h5>
+          <p class="testimonials__user-proffesion">Marketing Manager</p>
         </div>
-        <div class="testimony-card__footer">
-          <img src="./assets/images/testimonial_image3.png" alt="">
-          <h5 class="headline">Sam Preston</h5>
-          <p class="description">CTO</p>
+      </div>
+      <div class="testimonials__card">
+        <p class="testimonials__testimony-description">Lorem ipsum dolor sit amet, consetetur sadipscing
+          elitr, sed diam nonumy eirmod
+          tempor
+          invidunt ut labore
+          et dolore
+          magna aliquyam erat, sed diam voluptua.</p>
+        <div class="testimonials__card-footer">
+          <img class="testimonials__user-image" src="./assets/images/testimonial_image3.png" alt="user">
+          <h5 class="testimonials__user-name">Sam Preston</h5>
+          <p class="testimonials__user-proffesion">CTO</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="cta">
-    <div class="section-text section-text--centered">
-      <h2 class="section-text__heading section-text__heading--big">Are you ready to grow your business with us?</h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+    <div class="cta__text">
+      <h2 class="cta__heading">Are you ready to grow your business with us?</h2>
+      <p class="cta__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
       </p>
-      <button type="button" class="button button--primary">View Pricing</button>
+      <button type="button" class="cta__button">View Pricing</button>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="footer__links">
-      <a href="#" class="headline headline--light headline--footer">Company</a>
-      <a href="#" class="link link--footer">About us</a>
-      <a href="#" class="link link--footer">Why Choose us</a>
-      <a href="#" class="link link--footer">Pricing</a>
-      <a href="#" class="link link--footer">Testimonial</a>
+    <div class="footer__links-container">
+      <a href="#" class="footer__links-headline">Company</a>
+      <a href="#" class="footer__link">About us</a>
+      <a href="#" class="footer__link">Why Choose us</a>
+      <a href="#" class="footer__link">Pricing</a>
+      <a href="#" class="footer__link">Testimonial</a>
     </div>
-    <div class="footer__links">
-      <a href="#" class="headline headline--light headline--footer">Company</a>
-      <a href="#" class="link link--footer">About us</a>
-      <a href="#" class="link link--footer">Why Choose us</a>
-      <a href="#" class="link link--footer">Pricing</a>
-      <a href="#" class="link link--footer">Testimonial</a>
+    <div class="footer__links-container">
+      <a href="#" class="footer__links-headline">Company</a>
+      <a href="#" class="footer__link">About us</a>
+      <a href="#" class="footer__link">Why Choose us</a>
+      <a href="#" class="footer__link">Pricing</a>
+      <a href="#" class="footer__link">Testimonial</a>
     </div>
-    <div class="footer__links">
-      <a href="#" class="headline headline--light headline--footer">Company</a>
-      <a href="#" class="link link--footer">About us</a>
-      <a href="#" class="link link--footer">Why Choose us</a>
-      <a href="#" class="link link--footer">Pricing</a>
-      <a href="#" class="link link--footer">Testimonial</a>
+    <div class="footer__links-container">
+      <a href="#" class="footer__links-headline">Company</a>
+      <a href="#" class="footer__link">About us</a>
+      <a href="#" class="footer__link">Why Choose us</a>
+      <a href="#" class="footer__link">Pricing</a>
+      <a href="#" class="footer__link">Testimonial</a>
     </div>
     <div class="footer-cta">
-      <img class="logo" src="./assets/icons/Finsweet white logo.svg" alt="FinSweet black logo">
+      <img class="footer__logo" src="./assets/icons/Finsweet white logo.svg" alt="FinSweet black logo">
       <div class="footer__newsletter">
-        <p class="description description--light">Subscribe to our Newsletter</p>
-        <form class="single-field-form single-field-form--footer">
-          <input type="text" placeholder="Enter Your Email"
-            class="single-field-form__input single-field-form__input--footer">
-          <button type="submit" class="button button--secondary button--single-field-form">Subscribe</button>
+        <p class="footer__newsletter-description">Subscribe to our Newsletter</p>
+        <form class="footer__newsletter-form">
+          <input type="text" placeholder="Enter Your Email" class="footer__newsletter-input">
+          <button type="submit" class="footer__button">Subscribe</button>
         </form>
       </div>
     </div>
