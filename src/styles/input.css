@@ -283,9 +283,17 @@
   /* Contact us section in contact.html */
 
   .contact-us {
+    @apply px-20 flex flex-col gap-16;
+  }
+
+  .contact-us__form-container {
     @apply flex gap-[148px] bg-light_violet py-14 px-16 rounded-3xl;
   }
-  
+
+  .contact-us__heading {
+    @apply font-bold  text-[56px] leading-[62px] max-w-[768px];
+  }
+
   .contact-us__form {
     @apply grid grid-cols-[repeat(2,303px)] gap-4;
   }
