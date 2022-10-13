@@ -1,0 +1,23 @@
+{
+  "name": "finsweet-bem",
+  "version": "1.0.0",
+  "description": "finsweet website implemented using BEM CSS methodology and TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:watch": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yvad60/finsweet-bem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yvad60/finsweet-bem/issues"
+  },
+  "homepage": "https://github.com/Yvad60/finsweet-bem#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
